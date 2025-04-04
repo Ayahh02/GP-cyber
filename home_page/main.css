@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ddd;
+    padding: 1px;
+}
+
+.logo img {
+    width: 150PX;
+    height: auto;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.auth-buttons .btn1 {
+    width: auto;
+    height: auto;
+    background: #2273B4;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: medium;
+    border-color: white;
+}
+.auth-buttons .btn2 {
+    width: auto;
+    height: auto;
+    background: white;
+    color: #2273B4;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: #2273B4;
+
+    font-weight: medium;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: #333;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.hero-text h1, .hero-text p{
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-in-out forwards;
+}
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px; 
+    min-height: 65vh; 
+}
+
+.hero-text {
+    max-width: 50%;
+    margin-top: -30px; 
+}
+
+.hero img {
+    width: 50%; 
+    max-width: 550px; 
+    margin-top: -30px; 
+}
+.hero-text h1{
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+.hero .btn {
+    display: flex;
+    width: 40%;
+    background: #2273B4;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.hero-text .btn a{
+    font-style: italic;
+}
+
+
+.section {
+    padding: 30px;
+    color: white;
+    background-color: #2273B4;
+    margin: 10px 20px;
+    border-radius: 10px;
+    opacity: 0;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(50px);
+    transition: all 2s ease-in-out;
+}
+
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling */
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    color: grey;
+    padding: 10px;
+    background: #f5f5f5;
+}
+
+.section.left {
+    transform: translateX(-50px);
+}
+
+.section.visible {
+    opacity: 1;
+    transform: translateX(0);
+}

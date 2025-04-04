@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings Page</title>
+    <style>
+    
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+        }
+
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #ddd;
+            padding: 15px;
+        }
+
+        .logo img {
+            width: 80px;
+        }
+
+        .profile-icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+
+        
+        .dashboard-area {
+            display: flex;
+            height: calc(100vh - 70px); 
+        }
+
+        .dashboard-left-content {
+            width: 250px;
+            background-color: #ecf0f1;
+            padding: 20px;
+            min-height: 100%;
+        }
+
+        .dashboard-list {
+            list-style: none;
+            margin-top: 30px;
+        }
+
+        .list {
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .list:hover {
+            background-color: #3498db;
+            color: white;
+        }
+
+        .list.active {
+            background-color: #2980b9;
+            color: white;
+        }
+
+        .dashboard-content {
+            flex: 1;
+            padding: 20px;
+            background: white;
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        .btn {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 150px;
+        }
+
+        .btn:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Cyber Security Hub">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon">
+            <img src="account.png" alt="User">
+        </div>
+    </header>
+
+    <div class="dashboard-area">
+    
+        <div class="dashboard-left-content">
+            <h2>Settings</h2>
+            <ul class="dashboard-list">
+                <li class="list active" onclick="showSection('user-info')">User Information</li>
+                <li class="list" onclick="showSection('password-settings')">Password</li>
+                <li class="list" onclick="showSection('payment-settings')">Payment & Card</li>
+                <li class="list" onclick="showSection('faqs')">FAQs</li>
+                <li class="list" onclick="showSection('privacy-policy')">Privacy Policy</li>
+                <li class="list" onclick="showSection('help')">Help</li>
+                <li class="list"><a href="../home_page/main.html" style="text-decoration: none; color: inherit;">Log Out</a></li>
+            </ul>
+        </div>
+
+  
+        <div class="dashboard-content">
+           
+            <div id="user-info" class="section active">
+                <h2>User Information</h2>
+                <p>First Name: <input type="text" placeholder="John"></p>
+                <p>Last Name: <input type="text" placeholder="Doe"></p>
+                <p>Email: <input type="email" placeholder="john@example.com"></p>
+                <p>Phone: <input type="tel" placeholder="+123456789"></p>
+                <p>About Me: <textarea rows="4">Cybersecurity specialist...</textarea></p>
+                <button class="btn">Save Changes</button>
+            </div>
+
+  
+            <div id="password-settings" class="section">
+                <h2>Password Settings</h2>
+                <p>Current Password: <input type="password"></p>
+                <p>New Password: <input type="password"></p>
+                <p>Confirm Password: <input type="password"></p>
+                <button class="btn">Update Password</button>
+            </div>
+
+            <div id="payment-settings" class="section">
+                <h2>Payment & Card</h2>
+                <p>Card Number: <input type="text" placeholder="**** **** **** 1234"></p>
+                <p>Expiration Date: <input type="text" placeholder="MM/YY"></p>
+                <button class="btn">Update Payment</button>
+            </div>
+
+  
+            <div id="faqs" class="section">
+                <h2>FAQs</h2>
+                <p>Frequently Asked Questions</p>
+            </div>
+
+      
+            <div id="privacy-policy" class="section">
+                <h2>Privacy Policy</h2>
+                <p>Details about privacy policy...</p>
+            </div>
+
+
+            <div id="help" class="section">
+                <h2>Help</h2>
+                <p>Contact support at help@example.com</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+ 
+            document.querySelectorAll('.section').forEach(section => {
+                section.classList.remove('active');
+            });
+
+   
+            document.getElementById(sectionId).classList.add('active');
+
+ 
+            document.querySelectorAll('.list').forEach(item => {
+                item.classList.remove('active');
+            });
+
+
+            event.target.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>

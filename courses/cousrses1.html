@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Hub</title>
+    <link rel="stylesheet" href="courses.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+
+    <header>
+        <div class="logo"> 
+            <img src="logo.png" alt="Cyber Security Hub">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon">
+            <img src="account.png" alt="User Profile">
+        </div>
+    </header>
+
+    
+    <section class="welcome-container">
+        <div class="welcome">
+            <h2>Hello, Mo</h2>
+            <h5>Ready to secure the future?</h5>
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-search"></i> 
+            <input type="text" id="searchInput" placeholder="Search Courses">
+        </div>
+    </section>
+
+
+    <section class="courses-container">
+        <h3>Featured Courses</h3>
+        <div class="courses">
+            <div class="card" onclick="navigateToCourse()">
+                <img src="security.jpg" alt="Cybersecurity Course">
+                <h4>Introduction to CyberSecurity</h4>
+                <p>1 Lessons</p>
+                <p> 6h 30m ⭐ 5.5</p>
+            </div>
+            <div class="card" onclick="navigateToCourse()">
+                <img src="security.jpg" alt="Cybersecurity Course">
+                <h4>test</h4>
+                <p>1 Lessons</p>
+                <p> 6h 30m ⭐ 5.5</p>
+            </div>
+            <div class="card" onclick="navigateToCourse()">
+                <img src="security.jpg" alt="Cybersecurity Course">
+                <h4>Security</h4>
+                <p>12 Lessons</p>
+                <p> 6h 30m ⭐ 5.5</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="courses.js"></script>
+</body>
+</html>

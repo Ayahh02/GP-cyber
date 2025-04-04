@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+.hidden {
+    display: none;
+}
+#certificate {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+#certificate img {
+    width: 100%;
+    max-width: 800px;
+}
+#certificate-name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+}
+#certificate-date {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #000;
+}
+button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

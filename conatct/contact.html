@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="logo.png" alt="Cyber Security Hub">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>\\
+                <li><a href="#">About Us</a></li>
+                <li><a href="#" class="active">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon">
+            <img src="account.png" alt="User Profile">
+        </div>
+    </header>
+    
+    <section class="contact-container">
+        <h2>Contact Us</h2>
+        <p>Some contact information on how to reach out</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <script src="contact.js"></script>
+</body>
+</html>

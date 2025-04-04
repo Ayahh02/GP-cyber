@@ -1,0 +1,160 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background: url('../images/bg.png') no-repeat center center/cover;
+    backdrop-filter: brightness(0.85);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    height: 100vh;
+    
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7); 
+    z-index: -1;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    top: 0;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+    margin-right: 20px;
+}
+
+.auth-buttons .btn1 {
+    width: auto;
+    height: auto;
+    background: #2273B4;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: medium;
+    border-color: white;
+}
+.auth-buttons .btn2 {
+    width: auto;
+    height: auto;
+    background: white;
+    color: #2273B4;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    border-color: #2273B4;
+
+    font-weight: medium;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+
+
+.container {
+    
+    margin-top: 80px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.login-box {
+    max-width: 350px;
+    margin: auto;
+    
+}
+
+h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+input[type="email"]{
+    width: 92%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.password-container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items:left;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.forgot-password {
+    text-decoration: none;
+    color: #2273B4;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #2273B4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkblue;
+}

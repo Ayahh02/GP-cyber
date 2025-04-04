@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="freelancerMarket.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Cyber Security Hub">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon">
+            <img src="account.png" alt="User">
+        </div>
+    </header>
+
+    <section class="welcome-container">
+        <div class="welcome">
+            <h2>Hello, Mo </h2>
+            <h5>Ready to secure the future?</h5>
+        </div>
+        <div class="search-bar">
+            <i class="fas fa-search"></i> 
+            <input type="text" id="searchInput" placeholder="Search Courses">
+        </div>
+    </section>
+
+    <section class="freelancers">
+        <div class="header">
+            <h3>Explore Freelancers</h3>
+            <a href="#" id="seeAllFreelancers" class="see-all" style="display: none;">See all</a>
+        </div>
+        <div class="cards freelancer-cards">
+           
+            <div class="card"><img src="ww.jpg"><p><strong>SARAH Mohammad</strong></p><p>20 COURSES</p></div>
+            <div class="card"><img src="ww.jpg"><p><strong>Aya</strong></p><p>20 COURSES</p></div>
+            <div class="card"><img src="ww.jpg"><p><strong>Rama</strong></p><p>20 COURSES</p></div>
+            <div class="card"><img src="ww.jpg"><p><strong>mmm</strong></p><p>20 COURSES</p></div>
+            <div class="card"><img src="ww.jpg"><p><strong>Duha</strong></p><p>2 COURSES</p></div>
+        </div>
+    </section>
+
+   
+    <section class="courses-container">
+        <div class="header">
+            <h3>Featured Courses</h3>
+            <a href="#" id="seeAllCourses" class="see-all" style="display: none;">See all</a>
+        </div>
+        <div class="cards course-cards">
+            <div class="card" onclick="navigateToCourse()"><img src="security.jpg"><h4>Intro to CyberSecurity</h4><p>12 Lessons</p><p>6h 30m ⭐ 5.5</p></div>
+            <div class="card" onclick="navigateToCourse()"><img src="security.jpg"><h4>Security</h4><p>12 Lessons</p><p>6h 30m ⭐ 5.5</p></div>
+            <div class="card" onclick="navigateToCourse()"><img src="security.jpg"><h4>test</h4><p>12 Lessons</p><p>6h 30m ⭐ 5.5</p></div>
+            <div class="card" onclick="navigateToCourse()"><img src="security.jpg"><h4>auth</h4><p>12 Lessons</p><p>6h 30m ⭐ 5.5</p></div>
+            <div class="card" onclick="navigateToCourse()"><img src="security.jpg"><h4>hacking</h4><p>12 Lessons</p><p>6h 30m ⭐ 5.5</p></div>
+        </div>
+    </section>
+
+</body>
+</html>

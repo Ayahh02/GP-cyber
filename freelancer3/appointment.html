@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking</title>
+    <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+    <header>
+        <div class="logo"> 
+            <img src="logo.png" alt="Cyber Security Hub">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+        </nav>
+        <div class="profile-icon">
+            <img src="account.png" alt="User Profile">
+        </div>
+    </header>
+
+    <section class="booking-container">
+        <h1>Book An Appointment</h1>
+        <div class="appointment-box">
+            <div class="profile-info">
+                <img src="ww copy.jpg" alt="Sarah Mohammad">
+                <h2>Sarah Mohammad</h2>
+                <p>Specialized in CyberSecurity</p>
+            </div>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+                    <span id="currentMonth">January, 2025</span>
+                    <button id="nextMonth">&gt;</button>
+                </div>
+                <div class="calendar-days">
+                    <div>Sun</div> <div>Mon</div> <div>Tue</div> <div>Wed</div>
+                    <div>Thu</div> <div>Fri</div> <div>Sat</div>
+                </div>
+                <div class="calendar-grid" id="calendar"></div>
+                <div class="time-selection">
+                    <label for="time">Choose Time:</label>
+                    <select id="time"></select>
+                </div>
+                <button id="bookButton">Book The Chosen Date & Time</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="appointment.js"></script>
+</body>
+</html>
