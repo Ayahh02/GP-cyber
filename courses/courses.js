@@ -1,4 +1,4 @@
-// Search functionality
+// Search Functionality
 document.getElementById('searchInput').addEventListener('keyup', function () {
     let filter = this.value.toLowerCase();
     let courses = document.querySelectorAll('.card');
@@ -13,7 +13,7 @@ document.getElementById('searchInput').addEventListener('keyup', function () {
     });
 });
 
-// Navigate to another course page
+
 function navigateToCourse() {
     window.location.href = "courses2.html";
 }

@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 saveAppointments();
                 alert(`Appointment booked for ${chosenDay} ${months[chosenMonth]} ${chosenYear} at ${selectedTime}`);
                 
-                // Redirect to details.html
+              
                 window.location.href = "../freelancer2/details.html";
 
             } else {
